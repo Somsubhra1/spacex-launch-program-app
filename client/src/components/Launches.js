@@ -24,7 +24,7 @@ export default class Launches extends Component {
                 <h1 className="display-4 my-3">Launches</h1>
                 <MissonKey />
                 {/*Passing query to server */}
-                <Query query={LAUNCHES_QUERY}> 
+                <Query query={LAUNCHES_QUERY}>
                     {({ loading, error, data }) => {
                         if (loading) {
                             return <h4>Loading....</h4>;
