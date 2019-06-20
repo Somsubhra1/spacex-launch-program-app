@@ -80,7 +80,9 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 return axios
                     .get(
-                        `https://api.spacexdata.com/v3/rockets/${args.rocket_id}`
+                        `https://api.spacexdata.com/v3/rockets/${
+                            args.rocket_id
+                        }`
                     )
                     .then(res => res.data);
             }
